@@ -90,35 +90,23 @@ Pre Jenkins Setup
 To do CI with Jenkins you will need to setup some scripts that manage building and testing from the command line. Lucky us,
 I have included those scripts for you.
 
-### Makefile
-
-Put this [Makefile](https://raw.github.com/gabriel/gh-unit/master/Examples/MyTestable-iOS/Makefile) in your project root.
-
-```MakeFile
-default:
-	#Set default make action here
-	# xcodebuild -target Tests -configuration MyMainTarget -sdk iphonesimulator build	
-
-clean:
-	-rm -rf build/*
-
-test:
-	GHUNIT_CLI=1 xcodebuild -target GHUnitTest -configuration Debug -sdk iphonesimulator build	
-
-copytestimages:
-  #Commented out for simplicity sake
-	#../../Scripts/CopyTestImages.sh
-```
-
 ### Scripts
 
 Copy the ```Scripts``` folder from this repo into the root of your project.
 
+Move the script ```buildAndTest.sh``` and ```MakeFile``` to the root folder of your project:
+
+```sh
+mv Scripts/buildAndTest.sh .
+mv Scripts/Makefile .
+```
 ### Add a Script step to the Build Target GHUnitTest
 
 Add this ```sh "${PROJECT_DIR}/Scripts/RunTests.sh"```
 
 ![Run Script](/interlock/barcampyxe-ios-ut-ci/raw/master/images/run_script.png)
+
+
 
 New Jenkins Job
 ---------------
@@ -143,10 +131,16 @@ Use the option ```Poll SCM``` with the settings ```* * * * *```
 ### Add Build Step
 
 ```sh
-sh "$WORKSPACE/Scripts/buildAndTest.sh"
+sh "$WORKSPACE/buildAndTest.sh"
 ```
 
 ![Build Step](/interlock/barcampyxe-ios-ut-ci/raw/master/images/jenkins_build_step.png)
+
+### JUnit Report
+
+```build/test-results/*.xml```
+
+![JUnit](/interlock/barcampyxe-ios-ut-ci/raw/master/images/jenkins_junit.png)
 
 Jenkins CI
 ----------
