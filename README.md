@@ -27,7 +27,7 @@ GHUnit
 
 > To build the framework for iOS, run make from within the Project-iOS directory. The framework is in Project-iOS/build/Framework/.
 
-If this opens Finder window with GHUnitIOS.framework in it you have successfully built GHUnit.
+If this opens a Finder window with GHUnitIOS.framework in it you have successfully built GHUnit.
 
 GHUnit in a Xcode Project
 -------------------------
@@ -142,11 +142,11 @@ The path to the JUnit XML files is here: ```build/test-results/*.xml```
 
 ![JUnit](/interlock/barcampyxe-ios-ut-ci/raw/master/images/jenkins_junit.png)
 
+Finished
+--------
 
-Jenkins CI
-----------
-
-
+At this point, Jenkins will build and run the GHUnitTest every time your push an update to your git repo.
+Try playing around with some Jenkins notification plugins to make the best use of the feedback it can provide.
 
 Thanks
 ------
