@@ -38,10 +38,19 @@ GHUnit in a Xcode Project
 
 2. New Target as Empty Application.
 
-![Empty Project](/images/empty_project.png)
-![Empty Project Create](/images/empty_project_create.png)
+![Empty Project](./raw/master/images/empty_project.png)
 
-3. 
+![Empty Project Create](./raw/master/images/empty_project_create.png)
+
+3. At this point, you want to get GHUnit into your project.
+
+In the root of your project, create a folder: ```Vendors```
+
+Remember that GHUnitIOS.framework package? Copy that folder into Vendors.
+
+    git add Vendors; git commit -m "Vendor directory with GHUnit framework"
+
+Now 
 
 
 
