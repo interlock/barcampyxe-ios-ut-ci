@@ -138,9 +138,10 @@ sh "$WORKSPACE/buildAndTest.sh"
 
 ### JUnit Report
 
-```build/test-results/*.xml```
+The path to the JUnit XML files is here: ```build/test-results/*.xml```
 
 ![JUnit](/interlock/barcampyxe-ios-ut-ci/raw/master/images/jenkins_junit.png)
+
 
 Jenkins CI
 ----------
