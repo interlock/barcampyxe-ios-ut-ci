@@ -27,8 +27,21 @@ GHUnit
 
 > To build the framework for iOS, run make from within the Project-iOS directory. The framework is in Project-iOS/build/Framework/.
 
+4. If this opens Finder window with GHUnitIOS.framework in it you have successfully built GHUnit.
+
 GHUnit in a Xcode Project
 -------------------------
+
+1. Create a new target in your Xcode project, perhaps named GHUnitTest. This link takes you through it, but we can summarize here.
+
+    http://gabriel.github.com/gh-unit/docs/appledoc_include/guide_install_ios_4.html
+
+2. New Target as Empty Application.
+
+![Empty Project](/images/empty_project.png)
+![Empty Project Create](/images/empty_project_create.png)
+
+3. 
 
 
 
