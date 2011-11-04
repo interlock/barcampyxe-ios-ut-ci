@@ -9,7 +9,7 @@ Before you start
 You will need the following:
 
 * Xcode 4
-* Access to a working Jenkins install with the following plugins:
+* Access to a working Jenkins install with the following plugins: Jenkins GIT plugin
 * git and a git repo hosted where you and Jenkins can access it
 
 GHUnit
@@ -83,10 +83,77 @@ Some Simple GHUnit Tests
 
 GHUnit can do all sorts of amazing tests, you can see examples in their docs: http://gabriel.github.com/gh-unit/docs/appledoc_include/guide_testing.html 
 
-Jenkins Project Setup
----------------------
+
+Pre Jenkins Setup
+-----------------
+
+To do CI with Jenkins you will need to setup some scripts that manage building and testing from the command line. Lucky us,
+I have included those scripts for you.
+
+### Makefile
+
+Put this [Makefile](https://raw.github.com/gabriel/gh-unit/master/Examples/MyTestable-iOS/Makefile) in your project root.
+
+```MakeFile
+default:
+	#Set default make action here
+	# xcodebuild -target Tests -configuration MyMainTarget -sdk iphonesimulator build	
+
+clean:
+	-rm -rf build/*
+
+test:
+	GHUNIT_CLI=1 xcodebuild -target GHUnitTest -configuration Debug -sdk iphonesimulator build	
+
+copytestimages:
+  #Commented out for simplicity sake
+	#../../Scripts/CopyTestImages.sh
+```
+
+### Scripts
+
+Copy the ```Scripts``` folder from this repo into the root of your project.
+
+### Add a Script step to the Build Target GHUnitTest
+
+Add this ```sh "${PROJECT_DIR}/Scripts/RunTests.sh"```
+
+![Run Script](/interlock/barcampyxe-ios-ut-ci/raw/master/images/run_script.png)
+
+New Jenkins Job
+---------------
+
+Before starting this portion, you will want to have your git repo pushed someplace jenkins can get to it. I hear github works?
+
+### Create a Free Style Project
+
+![New Job](/interlock/barcampyxe-ios-ut-ci/raw/master/images/jenkins_new_job.png)
+
+### Add your git repo
+
+![Git Repo](/interlock/barcampyxe-ios-ut-ci/raw/master/images/jenkins_git.png)
+
+
+### Setup SCM Polling
+
+Use the option ```Poll SCM``` with the settings ```* * * * *```
+
+![SCM Polling](/interlock/barcampyxe-ios-ut-ci/raw/master/images/jenkins_poll.png)
+
+### Add Build Step
+
+```sh
+sh "$WORKSPACE/Scripts/buildAndTest.sh"
+```
+
+![Build Step](/interlock/barcampyxe-ios-ut-ci/raw/master/images/jenkins_build_step.png)
 
 Jenkins CI
 ----------
 
 
+
+Thanks
+------
+
+I've pulled parts of this from all over the place. If you see you work in here, push an update to this section.
