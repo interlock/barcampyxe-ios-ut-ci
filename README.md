@@ -38,9 +38,9 @@ GHUnit in a Xcode Project
 
 2. New Target as Empty Application.
 
-![Empty Project](raw/master/images/empty_project.png)
+![Empty Project](/bic2k/barcampyxe-ios-ut-ci/raw/master/images/empty_project.png)
 
-![Empty Project Create](raw/master/images/empty_project_create.png)
+![Empty Project Create](/bic2k/barcampyxe-ios-ut-ci/raw/master/images/empty_project_create.png)
 
 3. At this point, you want to get GHUnit into your project.
 
