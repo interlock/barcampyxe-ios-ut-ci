@@ -108,8 +108,8 @@ Add this ```sh "${PROJECT_DIR}/Scripts/RunTests.sh"```
 
 
 
-New Jenkins Job
----------------
+New Jenkins Job for Unit Testing
+--------------------------------
 
 Before starting this portion, you will want to have your git repo pushed someplace jenkins can get to it. I hear github works?
 
@@ -142,10 +142,42 @@ The path to the JUnit XML files is here: ```build/test-results/*.xml```
 
 ![JUnit](/interlock/barcampyxe-ios-ut-ci/raw/master/images/jenkins_junit.png)
 
+## New Jenkins Job for CI Build Test
+
+Okay, so we can run our unit tests. What next? In the true nature of CI, we keep integrating.
+We should build the actual app.
+
+### Copy Our First Job
+
+![Copy Job]()
+
+### Update Build Trigger
+
+Change it from ```Poll SCM``` to ```Build after other projects are built```. Provide the name of your UnitTesting Job.
+
+![Updated Build Triggers]()
+
+### Update Build Shell Command
+
+Update the shell command to have this:
+```sh
+cd "$WORKSPACE"
+xcodebuild -target MyTestApplication -configuration Debug -sdk iphonesimulator build
+```
+
+### Notifications
+
+In the Post-build Actions you will want to setup some notifications. E-mail is the easiest if your team is small.
+
+
 Finished
 --------
 
 At this point, Jenkins will build and run the GHUnitTest every time your push an update to your git repo.
+On success, it will test compiling the entire app as a Debug simulator build. 
+It is possible build signed release versions, but it requires moving keychain and mobileprovisioning profiles around.
+
+ 
 Try playing around with some Jenkins notification plugins to make the best use of the feedback it can provide.
 
 Thanks
