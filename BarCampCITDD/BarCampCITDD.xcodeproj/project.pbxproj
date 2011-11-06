@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE3A9B591466197D000BD12E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3A9B581466197D000BD12E /* UIKit.framework */; };
+		EE3A9B5B1466197D000BD12E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3A9B5A1466197D000BD12E /* Foundation.framework */; };
+		EE3A9B5D1466197D000BD12E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3A9B5C1466197D000BD12E /* CoreGraphics.framework */; };
+		EE3A9B631466197D000BD12E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE3A9B611466197D000BD12E /* InfoPlist.strings */; };
+		EE3A9B651466197D000BD12E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3A9B641466197D000BD12E /* main.m */; };
+		EE3A9B691466197D000BD12E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3A9B681466197D000BD12E /* AppDelegate.m */; };
+		EE3A9B6C1466197D000BD12E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3A9B6B1466197D000BD12E /* ViewController.m */; };
+		EE3A9B6F1466197D000BD12E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3A9B6D1466197D000BD12E /* ViewController.xib */; };
+		EE3A9B7B146619AD000BD12E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3A9B581466197D000BD12E /* UIKit.framework */; };
+		EE3A9B7C146619AD000BD12E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3A9B5A1466197D000BD12E /* Foundation.framework */; };
+		EE3A9B7D146619AD000BD12E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3A9B5C1466197D000BD12E /* CoreGraphics.framework */; };
+		EE3A9B83146619AD000BD12E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE3A9B81146619AD000BD12E /* InfoPlist.strings */; };
+		EE3A9B85146619AD000BD12E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3A9B84146619AD000BD12E /* main.m */; };
+		EE3A9B8E14661A23000BD12E /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3A9B8D14661A23000BD12E /* GHUnitIOS.framework */; };
+		EE3A9B9214661B2F000BD12E /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3A9B9114661B2F000BD12E /* TestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE3A9B541466197D000BD12E /* BarCampCITDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarCampCITDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3A9B581466197D000BD12E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EE3A9B5A1466197D000BD12E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE3A9B5C1466197D000BD12E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EE3A9B601466197D000BD12E /* BarCampCITDD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BarCampCITDD-Info.plist"; sourceTree = "<group>"; };
+		EE3A9B621466197D000BD12E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE3A9B641466197D000BD12E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE3A9B661466197D000BD12E /* BarCampCITDD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BarCampCITDD-Prefix.pch"; sourceTree = "<group>"; };
+		EE3A9B671466197D000BD12E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE3A9B681466197D000BD12E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE3A9B6A1466197D000BD12E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE3A9B6B1466197D000BD12E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE3A9B6E1466197D000BD12E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		EE3A9B79146619AD000BD12E /* UnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3A9B80146619AD000BD12E /* UnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = "<group>"; };
+		EE3A9B82146619AD000BD12E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE3A9B84146619AD000BD12E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE3A9B86146619AD000BD12E /* UnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTest-Prefix.pch"; sourceTree = "<group>"; };
+		EE3A9B8D14661A23000BD12E /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Vendors/GHUnitIOS.framework; sourceTree = "<group>"; };
+		EE3A9B9014661B2F000BD12E /* TestTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTests.h; sourceTree = "<group>"; };
+		EE3A9B9114661B2F000BD12E /* TestTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE3A9B511466197D000BD12E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3A9B591466197D000BD12E /* UIKit.framework in Frameworks */,
+				EE3A9B5B1466197D000BD12E /* Foundation.framework in Frameworks */,
+				EE3A9B5D1466197D000BD12E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3A9B76146619AD000BD12E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3A9B8E14661A23000BD12E /* GHUnitIOS.framework in Frameworks */,
+				EE3A9B7B146619AD000BD12E /* UIKit.framework in Frameworks */,
+				EE3A9B7C146619AD000BD12E /* Foundation.framework in Frameworks */,
+				EE3A9B7D146619AD000BD12E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE3A9B491466197D000BD12E = {
+			isa = PBXGroup;
+			children = (
+				EE3A9B5E1466197D000BD12E /* BarCampCITDD */,
+				EE3A9B7E146619AD000BD12E /* UnitTest */,
+				EE3A9B571466197D000BD12E /* Frameworks */,
+				EE3A9B551466197D000BD12E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE3A9B551466197D000BD12E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE3A9B541466197D000BD12E /* BarCampCITDD.app */,
+				EE3A9B79146619AD000BD12E /* UnitTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE3A9B571466197D000BD12E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE3A9B8D14661A23000BD12E /* GHUnitIOS.framework */,
+				EE3A9B581466197D000BD12E /* UIKit.framework */,
+				EE3A9B5A1466197D000BD12E /* Foundation.framework */,
+				EE3A9B5C1466197D000BD12E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE3A9B5E1466197D000BD12E /* BarCampCITDD */ = {
+			isa = PBXGroup;
+			children = (
+				EE3A9B671466197D000BD12E /* AppDelegate.h */,
+				EE3A9B681466197D000BD12E /* AppDelegate.m */,
+				EE3A9B6A1466197D000BD12E /* ViewController.h */,
+				EE3A9B6B1466197D000BD12E /* ViewController.m */,
+				EE3A9B6D1466197D000BD12E /* ViewController.xib */,
+				EE3A9B5F1466197D000BD12E /* Supporting Files */,
+			);
+			path = BarCampCITDD;
+			sourceTree = "<group>";
+		};
+		EE3A9B5F1466197D000BD12E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE3A9B601466197D000BD12E /* BarCampCITDD-Info.plist */,
+				EE3A9B611466197D000BD12E /* InfoPlist.strings */,
+				EE3A9B641466197D000BD12E /* main.m */,
+				EE3A9B661466197D000BD12E /* BarCampCITDD-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE3A9B7E146619AD000BD12E /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				EE3A9B8F14661AEF000BD12E /* Test */,
+				EE3A9B7F146619AD000BD12E /* Supporting Files */,
+			);
+			path = UnitTest;
+			sourceTree = "<group>";
+		};
+		EE3A9B7F146619AD000BD12E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE3A9B80146619AD000BD12E /* UnitTest-Info.plist */,
+				EE3A9B81146619AD000BD12E /* InfoPlist.strings */,
+				EE3A9B84146619AD000BD12E /* main.m */,
+				EE3A9B86146619AD000BD12E /* UnitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE3A9B8F14661AEF000BD12E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				EE3A9B9014661B2F000BD12E /* TestTests.h */,
+				EE3A9B9114661B2F000BD12E /* TestTests.m */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE3A9B531466197D000BD12E /* BarCampCITDD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3A9B721466197D000BD12E /* Build configuration list for PBXNativeTarget "BarCampCITDD" */;
+			buildPhases = (
+				EE3A9B501466197D000BD12E /* Sources */,
+				EE3A9B511466197D000BD12E /* Frameworks */,
+				EE3A9B521466197D000BD12E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarCampCITDD;
+			productName = BarCampCITDD;
+			productReference = EE3A9B541466197D000BD12E /* BarCampCITDD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE3A9B78146619AD000BD12E /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3A9B8A146619AD000BD12E /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				EE3A9B75146619AD000BD12E /* Sources */,
+				EE3A9B76146619AD000BD12E /* Frameworks */,
+				EE3A9B77146619AD000BD12E /* Resources */,
+				EE3A9B9314661C4B000BD12E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = EE3A9B79146619AD000BD12E /* UnitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE3A9B4B1466197D000BD12E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = EE3A9B4E1466197D000BD12E /* Build configuration list for PBXProject "BarCampCITDD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE3A9B491466197D000BD12E;
+			productRefGroup = EE3A9B551466197D000BD12E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE3A9B531466197D000BD12E /* BarCampCITDD */,
+				EE3A9B78146619AD000BD12E /* UnitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE3A9B521466197D000BD12E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3A9B631466197D000BD12E /* InfoPlist.strings in Resources */,
+				EE3A9B6F1466197D000BD12E /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3A9B77146619AD000BD12E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3A9B83146619AD000BD12E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE3A9B9314661C4B000BD12E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"${PROJECT_DIR}/Scripts/RunTests.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE3A9B501466197D000BD12E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3A9B651466197D000BD12E /* main.m in Sources */,
+				EE3A9B691466197D000BD12E /* AppDelegate.m in Sources */,
+				EE3A9B6C1466197D000BD12E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3A9B75146619AD000BD12E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3A9B85146619AD000BD12E /* main.m in Sources */,
+				EE3A9B9214661B2F000BD12E /* TestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE3A9B611466197D000BD12E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3A9B621466197D000BD12E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EE3A9B6D1466197D000BD12E /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3A9B6E1466197D000BD12E /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		EE3A9B81146619AD000BD12E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3A9B82146619AD000BD12E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE3A9B701466197D000BD12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE3A9B711466197D000BD12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE3A9B731466197D000BD12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BarCampCITDD/BarCampCITDD-Prefix.pch";
+				INFOPLIST_FILE = "BarCampCITDD/BarCampCITDD-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EE3A9B741466197D000BD12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BarCampCITDD/BarCampCITDD-Prefix.pch";
+				INFOPLIST_FILE = "BarCampCITDD/BarCampCITDD-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EE3A9B8B146619AD000BD12E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Vendors\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTest/UnitTest-Prefix.pch";
+				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EE3A9B8C146619AD000BD12E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Vendors\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTest/UnitTest-Prefix.pch";
+				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE3A9B4E1466197D000BD12E /* Build configuration list for PBXProject "BarCampCITDD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3A9B701466197D000BD12E /* Debug */,
+				EE3A9B711466197D000BD12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE3A9B721466197D000BD12E /* Build configuration list for PBXNativeTarget "BarCampCITDD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3A9B731466197D000BD12E /* Debug */,
+				EE3A9B741466197D000BD12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE3A9B8A146619AD000BD12E /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3A9B8B146619AD000BD12E /* Debug */,
+				EE3A9B8C146619AD000BD12E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE3A9B4B1466197D000BD12E /* Project object */;
+}
